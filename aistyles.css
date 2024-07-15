@@ -1,0 +1,120 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Default font family */
+    line-height: 1.6; /* Line height for better readability */
+    background-color: #f0f0f0; /* Background color for the entire page */
+    display: flex; /* Flexbox layout for main axis alignment */
+    min-height: 100vh; /* Minimum height to ensure footer sticks to bottom */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Container for centralizing content */
+.container {
+    width: 80%; /* Width of the content area */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Header styles */
+header {
+    background-color: #030392; /* Background color of the header */
+    color: #fff; /* Text color in the header */
+    padding: 10px 0; /* Padding top and bottom */
+}
+
+header h1 {
+    float: left; /* Left aligning the heading */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Removing default list styles */
+    float: right; /* Right aligning the navigation */
+}
+
+nav ul li {
+    display: inline; /* Displaying navigation items inline */
+    margin-left: 20px; /* Adding space between navigation items */
+}
+
+nav ul li a {
+    color: #fff; /* Text color of navigation links */
+    text-decoration: none; /* Removing underline from links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Section styles */
+section {
+    padding: 40px 0; /* Padding top and bottom for sections */
+}
+
+section h2 {
+    font-size: 2em; /* Font size for section headings */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Gallery styles */
+.gallery {
+    display: grid; /* Using grid layout for gallery */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Gap between gallery items */
+}
+
+.gallery img {
+    max-width: 100%; /* Maximum width for images */
+    height: auto; /* Automatic height adjustment */
+}
+
+/* Form styles */
+form {
+    max-width: 600px; /* Maximum width of the form */
+    margin: 0 auto; /* Centering the form */
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block; /* Displaying form elements as block */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+form input,
+form textarea {
+    padding: 10px; /* Padding inside input fields */
+    font-size: 1em; /* Font size of form elements */
+    border: 1px solid #ccc; /* Border color and width */
+}
+
+form button {
+    background-color: #080ec5; /* Background color of the button */
+    color: #fff; /* Text color of the button */
+    border: none; /* Removing default border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Changing cursor on hover */
+}
+
+form button:hover {
+    background-color: #2e06bf; /* Darker background color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #00166d; /* Background color of the footer */
+    color: #fff; /* Text color in the footer */
+    text-align: center; /* Center aligning text */
+    padding: 10px 0; /* Padding top and bottom */
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%; /* Full width footer */
+}
